@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.akshaybengani.courtcounter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BasketBall Court Counter"
+                android:textSize="30dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="#ff6f00"
+                android:textAlignment="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Team 1"
+                    android:textColor="#111"
+                    android:textSize="20dp"
+                    />
+                <TextView
+                    android:id="@+id/Team1Counter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#111"
+                    android:textSize="100dp"
+                    android:textAlignment="center"
+                    />
+                <Button
+                    android:id="@+id/myp3team1"
+                    android:onClick="p3Team1"
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="#f7842c"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="+3 Points"
+                    />
+
+                <Button
+                    android:onClick="p2Team1"
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#f7842c"
+                    android:layout_height="wrap_content"
+                    android:text="+2 Points"
+                    />
+                <Button
+                    android:onClick="p1Team1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f7842c"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="+1 Points"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Team 2"
+                    android:textColor="#111"
+                    android:textSize="20dp"
+                    />
+                <TextView
+                    android:id="@+id/Team2Counter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#111"
+                    android:textSize="100dp"
+                    android:textAlignment="center"
+                    />
+                <Button
+                    android:onClick="p3Team2"
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#f7842c"
+                    android:layout_height="wrap_content"
+                    android:text="+3 Points"
+                    />
+
+                <Button
+                    android:onClick="p2Team2"
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#f7842c"
+                    android:layout_height="wrap_content"
+                    android:text="+2 Points"
+                    />
+                <Button
+                    android:onClick="p1Team2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f7842c"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="+1 Points"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:onClick="reset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:background="#f7842c"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="100dp"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
